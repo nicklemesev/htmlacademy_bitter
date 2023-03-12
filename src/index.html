@@ -2,35 +2,47 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- <link href="css/outline.css" rel="stylesheet"> -->
+    <link href="css/style.css" rel="stylesheet">
     <title>Swedish Bitter</title>
 </head>
 
 <body>
     <header class="main-header">
-        <a class="main-header-logo">
-            <img src="img/logo.svg" width="198" height="29" alt="Логотип">
-        </a>
-        <p class="main-header-delivery">Доставка по всей России</p>
-        <a class="phone" href="tel:88000000000">8 800 000-00-00</a>
-        <p class="phone-text">Звонок бесплатный</p>
+        <div class="container main-header-wrapper">
+            <a class="main-header-logo">
+                <img src="img/logo.svg" width="198" height="29" alt="Логотип">
+            </a>
+            <p class="main-header-delivery">Доставка по всей России</p>
+            <div class="main-header-phone-column">
+                <a class="phone" href="tel:88000000000">8 800 000-00-00</a>
+                <p class="phone-text">Звонок бесплатный</p>
+            </div>
+        </div>
     </header>
     <main>
         <h1 class="visually-hidden">Бальзам «Swedish bitter»</h1>
         <section class="promo">
-            <h2 class="visually-hidden">Уникальные свойства бальзама</h2>
-            <img src="img/swedish-bitter.png" width="298" height="648" alt="Swedish bitter">
-            <p class="promo-text">
-                <span class="promo-text-uppercase">Бальзам</span>
-                <span class="promo-text-big">«Swedish bitter»</span>
-            </p>
-            <p class="promo-text">Не имеет аналогов в мире по оздоровительной силе и широте лечебных свойств</p>
-            <a class="green-button" href="#">Узнать подробнее о бальзаме</a>
+            <div class="container promo-wrapper">
+                <h2 class="visually-hidden">Уникальные свойства бальзама</h2>
+                <div class="promo-img-column">
+                    <img src="img/swedish-bitter.png" width="298" height="648" alt="Swedish bitter">
+                </div>
+                <div class="promo-text-column">
+                    <p class="promo-text">
+                        <span class="promo-text-uppercase">Бальзам</span>
+                        <span class="promo-text-big">«Swedish bitter»</span>
+                    </p>
+                    <p class="promo-text">Не имеет аналогов в мире по оздоровительной силе и широте лечебных свойств</p>
+                    <a class="green-button" href="#">Узнать подробнее о бальзаме</a>
+                </div>
+            </div>
         </section>
-        <section class="statistics">
+        <section class="statistics container">
             <h2 class="visually-hidden">Небольшая статистика</h2>
             <dl class="statistics-list">
                 <div class="statistics-item">
@@ -52,44 +64,58 @@
             </dl>
         </section>
         <section class="symptoms">
-            <h2 class="symptoms-title">Что из этого списка вы находите у себя?</h2>
-            <ul class="symptoms-list">
-                <li class="symptoms-item">Сниженный тонус, не хватает энергии</li>
-                <li class="symptoms-item">Прыщи, бородавки и растяжки</li>
-                <li class="symptoms-item">Слабая память и концентрация</li>
-                <li class="symptoms-item">Болеете чаще раза в год</li>
-                <li class="symptoms-item">Головные боли</li>
-                <li class="symptoms-item">Синяки, шишки, ожоги, порезы долго не проходят</li>
-                <li class="symptoms-item">Плохо засыпаете и часто просыпаетесь</li>
-            </ul>
-            <img src="img/human.png" width="500" height="689" alt="Строение человека">
-            <a class="green-button" href="#">Избавиться от проблем</a>
+            <div class="container symptoms-wrapper">
+                <div class="symptoms-list-column">
+                    <h2 class="symptoms-title">Что из этого списка вы находите у себя?</h2>
+                    <ul class="symptoms-list">
+                        <li class="symptoms-item">Сниженный тонус, не хватает энергии</li>
+                        <li class="symptoms-item">Прыщи, бородавки и растяжки</li>
+                        <li class="symptoms-item">Слабая память и концентрация</li>
+                        <li class="symptoms-item">Болеете чаще раза в год</li>
+                        <li class="symptoms-item">Головные боли</li>
+                        <li class="symptoms-item">Синяки, шишки, ожоги, порезы долго не проходят</li>
+                        <li class="symptoms-item">Плохо засыпаете и часто просыпаетесь</li>
+                    </ul>
+                </div>
+                <div class="symptoms-img-column">
+                    <img src="img/human.png" width="500" height="689" alt="Строение человека">
+                    <a class="green-button" href="#">Избавиться от проблем</a>
+                </div>
+            </div>
         </section>
         <section class="success-secret">
-            <h2 class="success-secret-title">Почему бальзам «Swedish Bitter» завоевал такую популярность?</h2>
-            <p class="success-secret-list-title">Вот лишь несколько причин:</p>
-            <ul class="success-secret-list">
-                <li class="success-secret-list-item">Эффективность как при наружном, так и внутреннем применении, более
-                    40 показаний к применению</li>
-                <li class="success-secret-list-item">Случаи излечения с помощью сбора, когда традиционная медицина не
-                    смогла помочь</li>
-                <li class="success-secret-list-item">Постоянно выявляются новые целительные свойства бальзама</li>
-                <li class="success-secret-list-item">Эффект от применения можно увидеть сразу</li>
-            </ul>
-            <figure class="success-secret-img">
-                <img src="img/bg-cup.jpg" width="875" height="645" alt="Девушка что-то пьет из белой кружки">
-                <figcaption>Даже в странах с очень высоким уровнем медицины, таких как Германия и Австрия, бальзам
-                    Шведская Горечь продаётся в каждой аптеке!</figcaption>
-            </figure>
-            <a class="success-secret-button green-button" href="#">Получить средство-панацею к себе в аптечку</a>
+            <div class="success-secret-list-column">
+                <h2 class="success-secret-title">Почему бальзам «Swedish Bitter» завоевал такую популярность?</h2>
+                <p class="success-secret-list-title">Вот лишь несколько причин:</p>
+                <ul class="success-secret-list">
+                    <li class="success-secret-list-item">Эффективность как при наружном, так и внутреннем применении,
+                        более
+                        40 показаний к применению</li>
+                    <li class="success-secret-list-item">Случаи излечения с помощью сбора, когда традиционная медицина
+                        не
+                        смогла помочь</li>
+                    <li class="success-secret-list-item">Постоянно выявляются новые целительные свойства бальзама</li>
+                    <li class="success-secret-list-item">Эффект от применения можно увидеть сразу</li>
+                </ul>
+            </div>
+            <div class="success-secret-img-column">
+                <figure class="success-secret-img">
+                    <img src="img/bg-cup.jpg" width="875" height="645" alt="Девушка что-то пьет из белой кружки">
+                    <figcaption>Даже в странах с очень высоким уровнем медицины, таких как Германия и Австрия, бальзам
+                        Шведская Горечь продаётся в каждой аптеке!</figcaption>
+                </figure>
+                <a class="success-secret-button green-button" href="#">Получить средство-панацею к себе в аптечку</a>
+            </div>
         </section>
         <section class="set">
-            <h2 class="set-title">Что вы получите вместе с бальзамом «Swedish Bitter»?</h2>
-            <ul class="set-list">
-                <li class="set-item set-item-herbs">сбор трав</li>
-                <li class="set-item set-item-instuction">инструкция по применению</li>
-                <li class="set-item set-item-certificate">сертификат качества</li>
-            </ul>
+            <div class="container">
+                <h2 class="set-title">Что вы получите вместе с бальзамом «Swedish Bitter»?</h2>
+                <ul class="set-list">
+                    <li class="set-item set-item-herbs">сбор трав</li>
+                    <li class="set-item set-item-instuction">инструкция по применению</li>
+                    <li class="set-item set-item-certificate">сертификат качества</li>
+                </ul>
+            </div>
         </section>
         <section class="ingredients">
             <h2 class="ingredients-title">Состав бальзама «Swedish Bitter»</h2>
